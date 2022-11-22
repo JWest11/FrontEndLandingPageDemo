@@ -2,18 +2,21 @@ class Carousel {
 
     currentItem = 0;
 
-    constructor (itemArray, imgContainerId, controllerId) {
+    constructor (itemArray, controllerId) {
         this.arrayLength = itemArray.length;
         this.itemArray = itemArray;
-        this.imgContainerId = imgContainerId;
         this.controllerId = controllerId;
         this.renderController();
         this.render();
     };
 
     render() {
-        const element = document.getElementById(this.imgContainerId);
-        element.style.backgroundImage = `url("img/${this.itemArray[this.currentItem]}")`;
+        let id = this.currentItem === 0 ? this.arrayLength-1 : this.currentItem-1;
+        console.log(id);
+        document.getElementById("carouselImage1").style.backgroundImage = `url("img/${this.itemArray[id]}")`;
+        document.getElementById("carouselImage2").style.backgroundImage = `url("img/${this.itemArray[this.currentItem]}")`;
+        id = this.currentItem === this.arrayLength-1 ? 0 : this.currentItem+1;
+        document.getElementById("carouselImage3").style.backgroundImage = `url("img/${this.itemArray[id]}")`;
     };
 
     nextImg() {
