@@ -1,4 +1,4 @@
-# FrontEndLandingPageDemo
+# Front End Landing Page
 
 https://jwest11.github.io/FrontEndLandingPageDemo/
 
