@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.section1 {
+  background-image: url("img/bg5.png");
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.bgText {
+  position: absolute;
+  background-image: url("img/bgText.png");
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding-right: 20vw;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar li {
+  margin-left: 70px;
+}
+.navbar .logoContainer {
+  margin-left: 20vw;
+}
+
+.nav1 {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+}
+.nav1 a {
+  text-decoration: underline;
+  color: rgb(240, 240, 240);
+  padding-left: 45px;
+}
+
+.nav2 {
+  background-image: url("img/nav1.png");
+  height: 100px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav2 a {
+  text-decoration: underline;
+  color: rgb(71, 71, 71);
+  padding-left: 45px;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section2 {
+  background-image: url("img/bg4.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18vw;
+  padding-top: 60px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 20px;
+  max-width: 53vw;
+  padding-left: 80px;
+}
+
+.section3 {
+  background-image: url("img/tab1.png");
+  background-repeat: no-repeat;
+  height: 545px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 200ms;
+}
+
+.footer {
+  background-image: url("img/footerbg.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carouselImages {
+  height: 225px;
+  width: 425px;
+  transition-duration: 400ms;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-bottom: 25px;
+}
+
+.carouselControl {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.carouselButton {
+  background-color: transparent;
+  border: none;
+}
+
+.carouselButton:hover {
+  cursor: pointer;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+.container3 p {
+  font-size: 20px;
+  max-width: 53vw;
+  padding-left: 60px;
+}
+
+.header2 {
+  background-image: url("img/nav1.png");
+  height: 180px;
+  width: 100vw;
+  background-size: cover;
+}
+
+.nav3 {
+  background-image: url("img/nav3bg.png");
+  height: 50px;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20vw;
+}
+.nav3 button {
+  margin-right: 20px;
+  padding: 25px;
+  border: none;
+  background-color: transparent;
+  color: rgb(192, 192, 192);
+  font-size: 25px;
+}
+.nav3 button:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(189, 189, 189) !important;
+  color: rgb(65, 83, 122) !important;
+  text-decoration: underline;
+}
+
+.schedule {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 280px;
+  height: 230px;
+}
+.schedule h3 {
+  color: rgb(65, 83, 122);
+  font-size: 35px;
+  padding: 15px 30px;
+}
+
+.scheduleGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+.scheduleGrid p {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.container4 {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container4 .logo {
+  margin-left: 20vw;
+}
+.container4 .copyright {
+  margin-right: 20vw;
+}
+
+.hamburger {
+  transition-duration: 100ms;
+  display: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
+.hamburger:hover {
+  background-color: rgba(235, 235, 235, 0.2);
+  cursor: pointer;
+}
+
+.deactivated {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .activated2 {
+    position: absolute;
+    top: 100px;
+    right: 13%;
+    background-color: rgb(98, 117, 158);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .activated2 a {
+    padding: 15px 20px;
+  }
+  .activated1 {
+    position: absolute;
+    top: 100px;
+    right: 13%;
+    background-color: rgb(88, 88, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .activated1 a {
+    padding: 15px 20px;
+  }
+  .navbar li {
+    margin-left: 10px !important;
+  }
+  .container {
+    padding-left: 15px;
+  }
+  .description {
+    padding: 0;
+    max-width: 90%;
+  }
+  .container3 p {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .nav3 {
+    padding-left: 10px;
+  }
+  .nav3 button {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .headerContainer2 {
+    width: 150px;
+  }
+  .headerContainer2 img {
+    width: 100%;
+  }
+  .container4 .logo {
+    margin-left: 10px;
+  }
+  .container4 .copyright {
+    margin-right: 10px;
+  }
+  .bgText {
+    background-size: contain;
+    background-image: url("img/bgText2.png");
+    background-position: 50% 10%;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .section1 {
+    height: 1100px;
+  }
+  .bgText {
+    height: 1100px;
+  }
+  .section2 {
+    height: 1100px;
+  }
+  .section3 {
+    height: 900px;
+  }
+  .schedule {
+    width: 370px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */

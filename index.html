@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <title>Los Angeles Mountains</title>
+</head>
+<body>
+    <div class="section1">
+        <div class="bgText"></div>
+        <div class="bgGradient"></div>
+        <div class="nav1 navbar">
+            <ul>
+                <li class="logoContainer">
+                    <img src="img/logo.png" alt="Logo">
+                </li>
+                <li class="links">
+                    <a href="#">01. HISTORY </a>
+                    <a href="#">02. TEAM </a>
+                </li>
+                <button onclick="toggleMenu1()" class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                      </svg>
+                </button>
+                <div class="deactivated" id="menu1">
+                    <a href="#">01. HISTORY </a>
+                    <a href="#">02. TEAM </a>
+                </div>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="nav2 navbar">
+        <ul>
+            <li class="logoContainer">
+                <img src="img/logo2.png" alt="Logo">
+            </li>
+            <li class="links">
+                <a href="#">01. HISTORY </a>
+                <a href="#">02. TEAM </a>
+            </li>
+            <button onclick="toggleMenu2()" class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+            </button>
+            <div class="deactivated" id="menu2">
+                <a href="#">01. HISTORY </a>
+                <a href="#">02. TEAM </a>
+            </div>
+        </ul>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="headerContainer">
+                <img src="img/textHeader1.png" alt="Header">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam deleniti cum quidem libero, odio magni alias laboriosam voluptatum, ipsam accusantium, aliquam rem atque corrupti inventore explicabo aut natus asperiores!</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="carousel">
+                <div id="carouselImages" class="carouselImages"></div>
+                <div id="carouselControl" class="carouselControl"></div>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="header2">
+        <div class="container3">
+            <div class="headerContainer2">
+                <img src="img/textHeader2.png" alt="Header">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore rerum, delectus debitis mollitia officia harum accusamus nulla et consequuntur? Quisquam totam fugiat nam necessitatibus quis, obcaecati dolor delectus consequuntur. Ut.</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav3">
+        <button id="mountain1" onclick="selectMountain1()" class="active">MOUNTAIN 1</button>
+        <button id="mountain2" onclick="selectMountain2()">MOUNTAIN 2</button>
+    </div>
+    <div class="section3" id="section3">
+        <div class="container">
+            <div class="schedule">
+                <h3>Schedule</h3>
+                <div class="scheduleGrid" id="schedule">
+                    <p>12/20/2020</p>
+                    <p>Lorem ipsum</p>
+                    <p>11/20/2020</p>
+                    <p>Lorem ipsum</p>
+                    <p>10/15/2021</p>
+                    <p>Lorem ipsum</p>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="footer">
+        <div class="container4">
+            <div class="logo">
+                <img src="img/footerLogo.png" alt="">
+            </div>
+            <div class="copyright">
+                <img src="img/footerCopyright.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script>
+        let carousel = new Carousel(["carousel1.png", "carousel2.png", "carousel1.png", "carousel2.png"], "carouselImages", "carouselControl")
+    </script>
+</body>
+</html>
