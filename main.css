@@ -163,7 +163,6 @@
   left: -175px;
   z-index: 3;
   background-size: cover;
-  transition-duration: 100ms;
 }
 
 .carouselImage2 {
@@ -173,7 +172,6 @@
   top: -65px;
   z-index: 4;
   background-size: cover;
-  transition-duration: 100ms;
 }
 
 .carouselImage3 {
@@ -183,7 +181,6 @@
   left: 230px;
   z-index: 3;
   background-size: cover;
-  transition-duration: 100ms;
 }
 
 .carouselControl {
