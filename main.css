@@ -9,7 +9,7 @@
   background-image: url("img/bg5.png");
   background-repeat: no-repeat;
   height: 850px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -21,7 +21,7 @@
   background-image: url("img/bgText.png");
   background-repeat: no-repeat;
   height: 850px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
   -webkit-animation: fadeIn 3s;
@@ -47,7 +47,7 @@
 
 .nav1 {
   height: 100px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   position: absolute;
@@ -62,7 +62,7 @@
 .nav2 {
   background-image: url("img/nav1.png");
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -95,7 +95,7 @@
 .section2 {
   background-image: url("img/bg4.png");
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 900px;
   background-position: center;
   background-size: cover;
@@ -126,7 +126,7 @@
   background-image: url("img/tab1.png");
   background-repeat: no-repeat;
   height: 545px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
   transition-duration: 200ms;
@@ -136,7 +136,7 @@
   background-image: url("img/footerbg.png");
   background-repeat: no-repeat;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -213,14 +213,14 @@
 .header2 {
   background-image: url("img/nav1.png");
   height: 180px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
 }
 
 .nav3 {
   background-image: url("img/nav3bg.png");
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -309,7 +309,7 @@
   .activated2 {
     position: absolute;
     top: 100px;
-    right: 13%;
+    right: 0%;
     background-color: rgb(98, 117, 158);
     display: flex;
     flex-direction: column;
@@ -321,7 +321,7 @@
   .activated1 {
     position: absolute;
     top: 100px;
-    right: 13%;
+    right: 0%;
     background-color: rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -330,8 +330,15 @@
   .activated1 a {
     padding: 15px 20px;
   }
+  .navbar ul {
+    padding-right: 15px;
+    padding-left: 0px;
+  }
   .navbar li {
-    margin-left: 10px !important;
+    margin-left: 0px !important;
+  }
+  .nav1 li {
+    padding-left: 15px;
   }
   .container {
     padding-left: 15px;
@@ -357,16 +364,33 @@
   .headerContainer2 img {
     width: 100%;
   }
+  .container4 {
+    max-width: 100%;
+  }
   .container4 .logo {
     margin-left: 10px;
+    max-width: 50%;
   }
   .container4 .copyright {
     margin-right: 10px;
+    max-width: 50%;
+  }
+  .container4 .copyright img {
+    width: 100%;
   }
   .bgText {
-    background-size: contain;
-    background-image: url("img/bgText2.png");
-    background-position: 50% 10%;
+    display: none;
+  }
+  .section1 {
+    background-image: url("img/bg2.png");
+    background-size: 100% 100%;
+    height: 120vw;
+  }
+  .carouselImage1 {
+    display: none;
+  }
+  .carouselImage3 {
+    display: none;
   }
 }
 @media screen and (min-width: 1921px) {
